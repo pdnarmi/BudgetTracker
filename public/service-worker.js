@@ -1,10 +1,6 @@
 
 const FILES_TO_CACHE = [
-    '/index.html',
-    // '/style.css',
-    // '/manifest.webmanifest',
-    // '/db.js',
-    // 'icons/icon-192x192.png'
+    '/index.html'
 ];
 
 const CACHE_NAME = 'static-cache-v2';
@@ -33,7 +29,6 @@ self.addEventListener('activate', function (evt) {
             );
         })
     );
-    // self.ClientRectList.claim();
 });
 
 self.addEventListener('fetch', function (evt) {
